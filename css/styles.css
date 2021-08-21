@@ -562,22 +562,11 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
   justify-content: center;
   max-width: 1000px;
 }
-.popupslider_castbox ul {
-  text-align: center;
-  position: relative;
-  top: -90px;
-  width: 100%;
-}
-
+.popupslider_castbox ul {text-align: center;position: relative;top: -90px;width: 100%;}
 .popupslider_castbox ul li {display: inline-block;margin: 0 20px;}
 .popupslider_castbox ul li img {width: 100px;border-radius: 100%;border: 2px solid #fff;}
 .popupslider_castbox ul li span {display: block;color: #fff;margin-top: 15px;font-size: 15px;}
-
-.popupslider_castbox p {
-  color: #fff;
-  text-align: center;
-  font-size: 18px;padding-bottom: 50px;
-}
+.popupslider_castbox p {color: #fff;text-align: center;font-size: 18px;padding-bottom: 50px;}
 .popupslider_castbox p:after {content: "";height: 2px;width: 500px;background: #F8F8F8;position: absolute;bottom: -20px;left: 50%;transform: translateX(-50%);opacity: 0.2;}
 
 
