@@ -200,7 +200,35 @@ $(document).ready(function () {
 		slidesToShow: 1,
 	});
 
-
+	//testimonials slider 
+	$('.popupslider_cast--slider').slick({
+		centerMode: true,
+		centerPadding: '120px',
+		slidesToShow: 1,
+		dots:false,
+		arrows:false,
+		asNavFor: '.slider_dots',
+		responsive: [
+			{
+				breakpoint: 1201,
+				settings: {
+					centerPadding: '5%',
+				}
+			},
+		]
+	});
+	$('.slider_dots').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.popupslider_cast--slider',
+		arrows: false,
+		dots: false,
+		centerMode: true,
+		focusOnSelect: true,
+		centerPadding: '20%',
+	});
+	//testimonials slider end
 });
 
 $(window).resize(function () {
