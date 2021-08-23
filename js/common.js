@@ -200,13 +200,14 @@ $(document).ready(function () {
 		slidesToShow: 1,
 	});
 
+
 	//testimonials slider 
 	$('.popupslider_cast--slider').slick({
 		centerMode: true,
 		centerPadding: '120px',
 		slidesToShow: 1,
-		dots:false,
-		arrows:false,
+		dots: false,
+		arrows: false,
 		asNavFor: '.slider_dots',
 		responsive: [
 			{
