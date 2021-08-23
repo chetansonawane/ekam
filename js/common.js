@@ -86,6 +86,7 @@ $(document).ready(function () {
 		jQuery("body").addClass('o-hidden');
 		jQuery('.overlay-bg').fadeIn(1000);
 		jQuery('.loopmein-popup4').fadeIn(1000);
+		slickinit();
 	});
 
 	jQuery('.close').on('click', function (e) {
@@ -95,6 +96,23 @@ $(document).ready(function () {
 		jQuery("body").removeClass('o-hidden');
 		jQuery('.overlay-bg').fadeOut(1000);
 		jQuery('.loopmein-popup4').fadeOut(500);
+	});
+
+	jQuery('#exploremore').on('click', function () {
+		jQuery("#mask5").addClass('open');
+		jQuery(".section5, .section4, .toc, footer").addClass('blur');
+		jQuery("body").addClass('o-hidden');
+		jQuery('.overlay-bg').fadeIn(1000);
+		jQuery('.loopmein-popup5').fadeIn(1000);
+	});
+
+	jQuery('.close').on('click', function (e) {
+		e.preventDefault();
+		jQuery("#mask5").removeClass('open');
+		jQuery(".section5, .section4, .toc, footer").removeClass('blur');
+		jQuery("body").removeClass('o-hidden');
+		jQuery('.overlay-bg').fadeOut(1000);
+		jQuery('.loopmein-popup5').fadeOut(500);
 	});
 
 
@@ -193,43 +211,69 @@ $(document).ready(function () {
 		$(this).hide();
 	});
 
-	$('.popupslider').slick({
-		dots: true,
-		infinite: true,
-		speed: 300,
-		slidesToShow: 1,
+	function slickinit() {
+		//testimonials slider 
+		$('.popupslider_cast--slider').slick({
+			centerMode: true,
+			centerPadding: '120px',
+			slidesToShow: 1,
+			dots: false,
+			arrows: false,
+			asNavFor: '.slider_dots',
+			responsive: [
+				{
+					breakpoint: 1201,
+					settings: {
+						centerPadding: '5%',
+					}
+				},
+			]
+		});
+		$('.slider_dots').slick({
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			asNavFor: '.popupslider_cast--slider',
+			arrows: false,
+			dots: false,
+			centerMode: true,
+			focusOnSelect: true,
+			centerPadding: '20%',
+		});
+		//testimonials slider
+
+	}
+
+
+
+	var width = 0;
+	$('.full-page-slider .flip-box-big1 .grid-crew').each(function () { width += $(this).width(); });
+	$('.full-page-slider .flip-box-big1').width(width);
+	$('.full-page-slider .flip-box-big1').height($('.full-page-slider').height());
+
+
+	$.fn.hScroll = function (amount) {
+		amount = amount || 120;
+		$(this).bind("DOMMouseScroll mousewheel tap", function (event) {
+			var oEvent = event.originalEvent,
+				direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
+				position = $(this).scrollLeft();
+			position += direction > 0 ? -amount : amount;
+			$(this).scrollLeft(position);
+			event.preventDefault();
+		})
+	};
+	if ($(window).width() >= 1025) {
+		$('.full-page-slider').hScroll(60);
+	}
+	$(window).resize(function () {
+		if ($(window).width() >= 1025) {
+			$('.full-page-slider').hScroll(60);
+		}
 	});
 
 
-	//testimonials slider 
-	$('.popupslider_cast--slider').slick({
-		centerMode: true,
-		centerPadding: '120px',
-		slidesToShow: 1,
-		dots: false,
-		arrows: false,
-		asNavFor: '.slider_dots',
-		responsive: [
-			{
-				breakpoint: 1201,
-				settings: {
-					centerPadding: '5%',
-				}
-			},
-		]
-	});
-	$('.slider_dots').slick({
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		asNavFor: '.popupslider_cast--slider',
-		arrows: false,
-		dots: false,
-		centerMode: true,
-		focusOnSelect: true,
-		centerPadding: '20%',
-	});
-	//testimonials slider end
+
 });
 
 $(window).resize(function () {
