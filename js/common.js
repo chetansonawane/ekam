@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 	jQuery('#knowmore').on('click', function () {
 		jQuery("#mask1").addClass('open');
-		jQuery(".section6, .section7, .section5, .toc, footer").addClass('blur');
+		jQuery(".section6, .section9, .section8, .toc, footer").addClass('blur');
 		jQuery("body").addClass('o-hidden');
 		jQuery('.overlay-bg').fadeIn(1000);
 		jQuery('.loopmein-popup1').fadeIn(1000);
@@ -40,7 +40,7 @@ $(document).ready(function () {
 	jQuery('.close').on('click', function (e) {
 		e.preventDefault();
 		jQuery("#mask1").removeClass('open');
-		jQuery(".section6, .section7, .section5, .toc, footer").removeClass('blur');
+		jQuery(".section6, .section9, .section8, .toc, footer").removeClass('blur');
 		jQuery("body").removeClass('o-hidden');
 		jQuery('.overlay-bg').fadeOut(1000);
 		jQuery('.loopmein-popup1').fadeOut(500);
@@ -65,7 +65,7 @@ $(document).ready(function () {
 
 	jQuery('.seeall-popup').on('click', function () {
 		jQuery("#mask3").addClass('open');
-		jQuery(".section7, .section6, .toc").addClass('blur');
+		jQuery(".section7, .section8, .toc").addClass('blur');
 		jQuery("body").addClass('o-hidden');
 		jQuery('.overlay-bg').fadeIn(1000);
 		jQuery('.loopmein-popup3').fadeIn(1000);
@@ -74,7 +74,7 @@ $(document).ready(function () {
 	jQuery('.close').on('click', function (e) {
 		e.preventDefault();
 		jQuery("#mask3").removeClass('open');
-		jQuery(".section7, .section6, .toc").removeClass('blur');
+		jQuery(".section7, .section8, .toc").removeClass('blur');
 		jQuery("body").removeClass('o-hidden');
 		jQuery('.overlay-bg').fadeOut(1000);
 		jQuery('.loopmein-popup3').fadeOut(500);
@@ -82,7 +82,7 @@ $(document).ready(function () {
 
 	jQuery('.seeall-popup-invs').on('click', function () {
 		jQuery("#mask4").addClass('open');
-		jQuery(".section7, .section6, .toc, footer").addClass('blur');
+		jQuery(".section8, .section6, .toc, footer").addClass('blur');
 		jQuery("body").addClass('o-hidden');
 		jQuery('.overlay-bg').fadeIn(1000);
 		jQuery('.loopmein-popup4').fadeIn(1000);
@@ -92,7 +92,7 @@ $(document).ready(function () {
 	jQuery('.close').on('click', function (e) {
 		e.preventDefault();
 		jQuery("#mask4").removeClass('open');
-		jQuery(".section7, .section6, .toc, footer").removeClass('blur');
+		jQuery(".section8, .section6, .toc, footer").removeClass('blur');
 		jQuery("body").removeClass('o-hidden');
 		jQuery('.overlay-bg').fadeOut(1000);
 		jQuery('.loopmein-popup4').fadeOut(500);
@@ -100,7 +100,7 @@ $(document).ready(function () {
 
 	jQuery('#exploremore').on('click', function () {
 		jQuery("#mask5").addClass('open');
-		jQuery(".section5, .section4, .toc, footer").addClass('blur');
+		jQuery(".section5, .section4, .section7, .toc, footer").addClass('blur');
 		jQuery("body").addClass('o-hidden');
 		jQuery('.overlay-bg').fadeIn(1000);
 		jQuery('.loopmein-popup5').fadeIn(1000);
@@ -109,7 +109,7 @@ $(document).ready(function () {
 	jQuery('.close').on('click', function (e) {
 		e.preventDefault();
 		jQuery("#mask5").removeClass('open');
-		jQuery(".section5, .section4, .toc, footer").removeClass('blur');
+		jQuery(".section5, .section4,.section7, .toc, footer").removeClass('blur');
 		jQuery("body").removeClass('o-hidden');
 		jQuery('.overlay-bg').fadeOut(1000);
 		jQuery('.loopmein-popup5').fadeOut(500);
@@ -215,7 +215,7 @@ $(document).ready(function () {
 		//testimonials slider 
 		$('.popupslider_cast--slider').slick({
 			centerMode: true,
-			centerPadding: '120px',
+			centerPadding: '100px',
 			slidesToShow: 1,
 			dots: false,
 			arrows: false,
