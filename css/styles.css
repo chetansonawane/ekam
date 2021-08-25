@@ -246,7 +246,7 @@ body:before {
 .social-box a{animation: fade-in 3s; animation-delay: 3s; position: relative; opacity: 0;}
 .social-box a.animate{opacity: 1;}
 .logo-box h2{font-size:4.8rem;font-family:'Montserrat', sans-serif;font-weight:400;color:#fff;}
-.image_wrapper {margin-top:-150px;}
+/*.image_wrapper {margin-top:-150px;}*/
 footer {
   width: 100%;
   display: inline-block;
@@ -296,8 +296,8 @@ footer {
 .success-msg span{font-size:1.8rem;font-weight:600;}
 .loopmein-popup1{}
 .loopmein-popup2{max-width:100%;}
-.loopmein-popup2-bg, .loopmein-popup4-bg, .loopmein-popup5-bg{width:100%;height:100%;background:url(../img/bg.jpg) no-repeat; background-size:cover;position:absolute;top:0;left:0;backdrop-filter: blur(-35px);filter: blur(4px);}
-.loopmein-popup5-bg{backdrop-filter: blur(3);filter: blur(3);}
+.loopmein-popup2-bg, .loopmein-popup4-bg, .loopmein-popup5-bg{width:100%;height:100%;background:url(../img/bg.jpg) no-repeat; background-size:cover;position:absolute;top:0;left:0;backdrop-filter: blur(-35px);filter: blur(3px);}
+.loopmein-popup5-bg{backdrop-filter: blur(3px);filter: blur(3px);}
 .loopmein-popup2 .card-box{max-width:680px;margin-right:40px;}
 .loopmein-popup2 .card-bio .card-image img{height: auto;}
 .loopmein-popup2 .card-bio--info{font-size: 15px;text-align: center;}
@@ -368,11 +368,14 @@ footer {
 
 .heading-with-bottom-border h2{font-size: 48px;line-height: 1.2;border-bottom: 1px solid rgba(255, 255, 255, 0.3);padding-bottom: 30px;margin-bottom: 45px;color:#fff;}
 /*.alert-type-box{border: 1px solid #FFBB4C;border-radius: 8px;background: transparent linear-gradient(180deg, #CEB52A1D 0%, #80808010 100%) 0% 0% no-repeat;padding: 45px 30px 30px 30px;}
-*/.alert-type-box{padding:30px;background: rgba(59, 71, 83, 0.3);border: 1px solid #707070;border-radius:20px;}
+*/.alert-type-box{padding:30px;background: rgba(59, 71, 83, 0.3);border: 1px solid #707070;border-radius:20px;overflow:hidden;}
 .alert-type-box h3{font-size: 20px;line-height: 1.1;letter-spacing: 4px;color: #FFBB4C;margin-bottom: 22px;margin-top:0;}
 .text-with-cta-column {display: flex;justify-content: space-between;flex-direction: row;align-items: flex-end;}
 .text-with-cta--desc {flex: 0 0 55%;max-width: 55%;}
 .text-with-cta--desc p{font-size: 16px;line-height: 1.8;margin-bottom: 0;color:#fff;}
+.loopmein-popup2 .card-bio {
+  overflow: inherit;
+}
 
 /* ============ Alert Type box end =========== */
 
@@ -386,7 +389,7 @@ footer {
 .flip-box-big .grid-item{max-width: 235px;height: 325px;}
 .card-group{display: flex;flex-direction: row;justify-content: flex-start;flex-wrap: wrap;margin-right: -20px;margin-left: -20px;}
 .card-box {padding:20px;flex:1;}
-.card-bio{padding:35px;background: rgba(59, 71, 83, 0.3);/*border: 1px solid #707070;*/border-radius: 20px;display: flex;flex-direction: row;justify-content: flex-start;}
+.card-bio{padding:35px;background: rgba(59, 71, 83, 0.3);/*border: 1px solid #707070;*/border-radius: 20px;display: flex;flex-direction: row;justify-content: flex-start;overflow:hidden;}
 .card-bio .card-image {flex: 0 0 30%;margin-right: 45px;max-width: 30%;max-height: 325px;}
 .card-bio .card-image img{height:100%;width:100%;object-fit:cover;/* object-position: top; */}
 .card-bio .card-desc{flex:0 0 70%;max-width:70%;}
@@ -606,6 +609,8 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
 .sound_music.active i:before{background:url(../img/sound_music.png) center center no-repeat;background-size:100%;}
 .production.active i:before{background:url(../img/production.png) center center no-repeat;background-size:100%;}
 .choreography.active i:before{background:url(../img/choreography.png) center center no-repeat;background-size:100%;}
+
+.blur-bg{width:100%;height:100%;background:url(../img/bg.jpg) no-repeat; background-size:cover;position:absolute;top:0;left:0;backdrop-filter: blur(5px);filter: blur(5px);}
 
 @media only screen and (max-width:1201px){
   .popupslider_cast{margin-left: 20px; margin-right: 20px;}
