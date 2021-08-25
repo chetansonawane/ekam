@@ -576,19 +576,35 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
 .slider_dots .slider_navigators{flex: 0 0 15px; height:15px; width:15px !important; background-color:#757575;border-radius:50%;margin:10px;transform:scale(.4);outline:0;cursor:pointer}
 .slider_dots .slider_navigators.slick-active{transform:scale(0.7)}
 .slider_navigators.slick-active.slick-current{transform:scale(1);background-color:#FFBB4C}
-.crew_img {margin: 8rem 0 12rem; display: inline-block;width: 100%;}
+.crew_img {margin:6rem 0 12rem; display: inline-block;width: 100%;}
 .crew_icon {margin: 0 auto;display: table;}
-.crew_icon li {display: inline-block;color: #fff;margin: 15px;text-align: center;vertical-align:top;font-size:0;cursor:pointer;}
-.crew_icon li i{width:10rem;height:10rem;border-radius: 50%;background:rgba(59, 71, 83, 0.3);display: block;margin: 0 auto 2rem;}
-.crew_icon li.active, .crew_icon li:hover{font-size: 14px;color: #ffbb4c;}
-.crew_icon li.active i, .crew_icon li i:hover {background:#2D271C url(../img/coreteam.png) center center no-repeat;}
-.crew_icon li.direction.active i, .crew_icon li.direction i:hover {background:#2D271C url(../img/direction.png) center center no-repeat;}
-.crew_icon li.cinematography.active i, .crew_icon li.cinematography i:hover{background:#2D271C url(../img/cinematography.png) center center no-repeat;}
-.crew_icon li.art_costume.active i, .crew_icon li.art_costume i:hover{background:#2D271C url(../img/art_costume.png) center center no-repeat;}
-.crew_icon li.postproduction.active i, .crew_icon li.postproduction i:hover{background:#2D271C url(../img/postproduction.png) center center no-repeat;}
-.crew_icon li.sound_music.active i, .crew_icon li.sound_music i:hover{background:#2D271C url(../img/sound_music.png) center center no-repeat;}
-.crew_icon li.production.active i, .crew_icon li.production i:hover{background:#2D271C url(../img/production.png) center center no-repeat;}
-.crew_icon lichoreography.active i, .crew_icon li.choreography i:hover{background:#2D271C url(../img/choreography.png) center center no-repeat;}
+.crew_icon li {display: inline-block;color: #fff;margin: 15px;text-align: center;vertical-align:top;font-size:14px;cursor:pointer;}
+.crew_icon li i{width:8rem;height:8rem;border-radius:50%;background:rgba(59, 71, 83, 0.3);display: block;margin: 0 auto 2rem;}
+.crew_icon li.active i{background:#2D271C;}
+.crew_icon li.active{color: #ffbb4c;}
+
+.coreteam i:before, .direction i:before, .cinematography i:before, .art_costume i:before, .postproduction i:before, .sound_music i:before, .production i:before, .choreography i:before{
+  content: ""; width:6rem;background: url(../img/coreteam-gray.png) center center no-repeat;position: absolute;top: 50%;left: 50%;
+  transform: translate(-50%, -50%);height: 100%;background-size:100%;}
+.direction i:before{background: url(../img/direction-gray.png) center center no-repeat;background-size:100%;}
+.cinematography i:before{background: url(../img/cinematography-gray.png) center center no-repeat;background-size:100%;}
+.art_costume i:before{background: url(../img/art_costume-gray.png) center center no-repeat;background-size:100%;width: 8rem;}
+.postproduction i:before{background: url(../img/postproduction-gray.png) center center no-repeat;background-size:100%;}
+.sound_music i:before{background: url(../img/sound_music-gray.png) center center no-repeat;background-size:100%;}
+.production i:before{background: url(../img/production-gray.png) center center no-repeat;background-size:100%;}
+.choreography i:before{background: url(../img/choreography-gray.png) center center no-repeat;background-size:100%;}
+
+.coreteam.active i:before, .direction.active i:before, .cinematography.active i:before, .art_costume.active i:before, 
+.postproduction.active i:before, .sound_music.active i:before, .production.active i:before, .choreography.active i:before
+{content: ""; width:6rem;background:url(../img/coreteam.png) center center no-repeat;position: absolute;top: 50%;left: 50%;
+  transform: translate(-50%, -50%);height: 100%;background-size:100%;}
+.direction.active i:before{background: url(../img/direction.png) center center no-repeat;background-size:100%;}
+.cinematography.active i:before{background:url(../img/cinematography.png) center center no-repeat;background-size:100%;}
+.art_costume.active i:before{background:url(../img/art_costume.png) center center no-repeat;background-size:100%;width: 8rem; }
+.postproduction.active i:before{background:url(../img/postproduction.png) center center no-repeat;background-size:100%;}
+.sound_music.active i:before{background:url(../img/sound_music.png) center center no-repeat;background-size:100%;}
+.production.active i:before{background:url(../img/production.png) center center no-repeat;background-size:100%;}
+.choreography.active i:before{background:url(../img/choreography.png) center center no-repeat;background-size:100%;}
 
 @media only screen and (max-width:1201px){
   .popupslider_cast{margin-left: 20px; margin-right: 20px;}
