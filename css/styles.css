@@ -435,7 +435,7 @@ footer {
 .toc ul li a.active:before {opacity:1;}
 /*----------------Scroll to the element styling end----------------------*/
 .flip-box-big1 .grid-clg, .flip-box-big1 .grid-clg1, .flip-box-big1 .grid-clg2, .flip-box-big1 .grid-clg3{display:inline-block;    position: relative;}
-.flip-box-big1 .grid-item {display:block;width:230px;height:300px;margin:20px 10px;}
+.flip-box-big1 .grid-item {display:block;width:165px;height:220px;margin:20px 10px;}
 .grid-clg1, .grid-clg3 {top:90px;}
 .grid-clg2 {top:-50px;}
 .cast-grid .flip-box-big1{margin-top:100px;}
@@ -575,9 +575,18 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
 .slider_dots .slider_navigators{flex: 0 0 15px; height:15px; width:15px !important; background-color:#757575;border-radius:50%;margin:10px;transform:scale(.4);outline:0;cursor:pointer}
 .slider_dots .slider_navigators.slick-active{transform:scale(0.7)}
 .slider_navigators.slick-active.slick-current{transform:scale(1);background-color:#FFBB4C}
-.section.section9 {
-  margin-top: 50px;
-}
+.crew_icon {margin: 0 auto;display: table;}
+.crew_icon li {display: inline-block;color: #fff;margin: 15px;text-align: center;vertical-align:top;font-size:0;cursor:pointer;}
+.crew_icon li i{width:10rem;height:10rem;border-radius: 50%;background:rgba(59, 71, 83, 0.3);display: block;margin: 0 auto 2rem;}
+.crew_icon li.active, .crew_icon li:hover{font-size: 14px;color: #ffbb4c;}
+.crew_icon li.active i, .crew_icon li i:hover {background:#2D271C url(../img/coreteam.png) center center no-repeat;}
+.crew_icon li.direction.active i, .crew_icon li.direction i:hover {background:#2D271C url(../img/direction.png) center center no-repeat;}
+.crew_icon li.cinematography.active i, .crew_icon li.cinematography i:hover{background:#2D271C url(../img/cinematography.png) center center no-repeat;}
+.crew_icon li.art_costume.active i, .crew_icon li.art_costume i:hover{background:#2D271C url(../img/art_costume.png) center center no-repeat;}
+.crew_icon li.postproduction.active i, .crew_icon li.postproduction i:hover{background:#2D271C url(../img/postproduction.png) center center no-repeat;}
+.crew_icon li.sound_music.active i, .crew_icon li.sound_music i:hover{background:#2D271C url(../img/sound_music.png) center center no-repeat;}
+.crew_icon li.production.active i, .crew_icon li.production i:hover{background:#2D271C url(../img/production.png) center center no-repeat;}
+.crew_icon lichoreography.active i, .crew_icon li.choreography i:hover{background:#2D271C url(../img/choreography.png) center center no-repeat;}
 
 @media only screen and (max-width:1201px){
   .popupslider_cast{margin-left: 20px; margin-right: 20px;}
