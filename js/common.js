@@ -215,7 +215,7 @@ $(document).ready(function () {
 	//testimonials slider 
 	$('.popupslider_cast--slider').slick({
 		centerMode: true,
-		centerPadding: '140px',
+		centerPadding: '160px',
 		slidesToShow: 1,
 		dots: false,
 		arrows: false,
@@ -238,7 +238,7 @@ $(document).ready(function () {
 		dots: false,
 		centerMode: true,
 		focusOnSelect: true,
-		centerPadding: '20%',
+		centerPadding: '48px',
 	});
 	//testimonials slider
 
