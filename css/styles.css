@@ -576,6 +576,7 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
 .slider_dots .slider_navigators{flex: 0 0 15px; height:15px; width:15px !important; background-color:#757575;border-radius:50%;margin:10px;transform:scale(.4);outline:0;cursor:pointer}
 .slider_dots .slider_navigators.slick-active{transform:scale(0.7)}
 .slider_navigators.slick-active.slick-current{transform:scale(1);background-color:#FFBB4C}
+.crew_img {margin: 8rem 0 12rem; display: inline-block;width: 100%;}
 .crew_icon {margin: 0 auto;display: table;}
 .crew_icon li {display: inline-block;color: #fff;margin: 15px;text-align: center;vertical-align:top;font-size:0;cursor:pointer;}
 .crew_icon li i{width:10rem;height:10rem;border-radius: 50%;background:rgba(59, 71, 83, 0.3);display: block;margin: 0 auto 2rem;}
