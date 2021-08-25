@@ -276,9 +276,9 @@ $(document).ready(function () {
 	$('.crew_icon li').on('click',function(){
 		var targetclass = $(this).attr('rel');
 		$('.crew_icon li').removeClass('active');
-		$('.crew_img_box .crew_img').fadeOut();
+		$('.crew_img_box .crew_img').hide();
 		$(this).addClass('active');
-		$('.crew_img_box .'+targetclass).fadeIn();
+		$('.crew_img_box .'+targetclass).show();
 		
 		if ($(window).width() <= 767) {
 			$("html, body").animate({ 
