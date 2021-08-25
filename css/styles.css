@@ -552,7 +552,8 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
 .loopmein-popup2 h2{margin-bottom:100px;}
 .showrunner .card-box:first-child:after{content:"";width:2px;height:300px;display:inline-block;background:#F8F8F8;position:absolute;right:-20px;top:50%;opacity:0.5;transform:translateY(-50%);}
 .popupslider-box{margin:70px 0;}
-.popupslider_cast{margin:0 auto; padding-top:60px;width:100% !important;}
+.popupslider_cast{margin:0 auto; padding-top:60px;width:100% !important; transition: 0.5s;}
+.popupslider_cast.slick-slide:not(.slick-active){transform: scale(0.8);}
 .popupslider_castbox {width: 100%;display: inline-block;padding:30px;background: rgba(59, 71, 83, 0.3);border-radius: 20px;display: flex;flex-direction: column;
   justify-content:flex-start;margin:0 auto;}
 .popupslider_castbox + .popupslider_castbox:not(.multiple):after{content:"";width:2px;height:300px;display:inline-block;background:#F8F8F8;position:absolute;left:-17px;top:50%;opacity:0.5;transform:translateY(-50%);}
