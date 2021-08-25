@@ -582,7 +582,8 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
 .crew_icon li i{width:8rem;height:8rem;border-radius:50%;background:rgba(59, 71, 83, 0.3);display: block;margin: 0 auto 2rem;}
 .crew_icon li.active i{background:#2D271C;}
 .crew_icon li.active{color: #ffbb4c;}
-
+.crew_img_box .crew_img{display: none;}
+.crew_img_box .crew_img:first-child{display: block;}
 .coreteam i:before, .direction i:before, .cinematography i:before, .art_costume i:before, .postproduction i:before, .sound_music i:before, .production i:before, .choreography i:before{
   content: ""; width:6rem;background: url(../img/coreteam-gray.png) center center no-repeat;position: absolute;top: 50%;left: 50%;
   transform: translate(-50%, -50%);height: 100%;background-size:100%;}
