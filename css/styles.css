@@ -297,7 +297,7 @@ footer {
 .loopmein-popup1{}
 .loopmein-popup2{max-width:100%;}
 .loopmein-popup2-bg, .loopmein-popup4-bg, .loopmein-popup5-bg{width:100%;height:100%;background:url(../img/bg.jpg) no-repeat; background-size:cover;position:absolute;top:0;left:0;backdrop-filter: blur(-35px);filter: blur(4px);}
-.loopmein-popup5-bg{backdrop-filter: blur(0);filter: blur(0);}
+.loopmein-popup5-bg{backdrop-filter: blur(3);filter: blur(3);}
 .loopmein-popup2 .card-box{max-width:680px;margin-right:40px;}
 .loopmein-popup2 .card-bio .card-image img{height: auto;}
 .loopmein-popup2 .card-bio--info{font-size: 15px;text-align: center;}
