@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="58.788" height="58.788" viewBox="0 0 58.788 58.788"><defs><style>.a{fill:none;}.b{fill:#fff;}</style></defs><g transform="matrix(0.966, 0.259, -0.259, 0.966, 12.423, 0)"><rect class="a" width="48" height="48"/><path class="b" d="M34.6,23.3,18.1,13.2c-.6-.4-1.1-.1-1.1.6V34.2c0,.7.5,1,1.1.6L34.6,24.7a.8.8,0,0,0,0-1.4Z"/><path class="b" d="M24,2A21.9,21.9,0,1,0,39.586,8.414,22,22,0,0,0,24,2Zm0,40A18,18,0,1,1,42,24,18,18,0,0,1,24,42Z"/></g></svg>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="invisible_box" data-name="invisible box">
+    <rect id="Rectangle_14" data-name="Rectangle 14" width="48" height="48" fill="none"/>
+  </g>
+  <g id="icons_Q2" data-name="icons Q2">
+    <g id="Group_7" data-name="Group 7">
+      <path id="Path_9" data-name="Path 9" d="M34.6,23.3,18.1,13.2c-.6-.4-1.1-.1-1.1.6V34.2c0,.7.5,1,1.1.6L34.6,24.7a.8.8,0,0,0,0-1.4Z" fill="#fff"/>
+      <path id="Path_10" data-name="Path 10" d="M24,2A21.9,21.9,0,1,0,39.586,8.414,22,22,0,0,0,24,2Zm0,40A18,18,0,1,1,42,24,18,18,0,0,1,24,42Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>
