@@ -246,7 +246,7 @@ body:before {
 .social-box a{animation: fade-in 3s; animation-delay: 3s; position: relative; opacity: 0;}
 .social-box a.animate{opacity: 1;}
 .logo-box h2{font-size:4.8rem;font-family:'Montserrat', sans-serif;font-weight:400;color:#fff;}
-/*.image_wrapper {margin-top:-150px;}*/
+.image_wrapper {margin-top:-100px;}
 footer {
   width: 100%;
   display: inline-block;
@@ -439,7 +439,7 @@ footer {
 /*----------------Scroll to the element styling end----------------------*/
 .flip-box-big1 .grid-clg, .flip-box-big1 .grid-clg1, .flip-box-big1 .grid-clg2, .flip-box-big1 .grid-clg3{display:inline-block;    position: relative;}
 .flip-box-big1 .grid-item {display:block;width:165px;height:220px;margin:20px 10px;}
-.grid-clg1, .grid-clg3 {top:90px;}
+.grid-clg1, .grid-clg3 {top:60px;}
 .grid-clg2 {top:-50px;}
 .cast-grid .flip-box-big1{margin-top:100px;}
 .flip-box-big1 {text-align:center; display: flex;}
@@ -450,7 +450,7 @@ footer {
 .full-page-slider .flip-box-big1 .grid-clg2{top:0}
 
 
-section#section-3{margin-top:-150px;}
+section#section-3{margin-top:-100px;}
 select{margin:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;-webkit-appearance: none;-moz-appearance: none;}
 
 select.classic{background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 50%, transparent 50%), linear-gradient(to right, #15181c, #15181c);background-position: calc(100% - 20px) calc(1em + 6px), calc(100% - 15px) calc(1em + 6px), 100% 0;background-size: 5px 5px, 5px 5px, 2.5em 2.5em;background-repeat: no-repeat;}
@@ -590,6 +590,7 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
 .coreteam i:before, .direction i:before, .cinematography i:before, .art_costume i:before, .postproduction i:before, .sound_music i:before, .production i:before, .choreography i:before{
   content: ""; width:6rem;background: url(../img/coreteam-gray.png) center center no-repeat;position: absolute;top: 50%;left: 50%;
   transform: translate(-50%, -50%);height: 100%;background-size:100%;}
+ 
 .direction i:before{background: url(../img/direction-gray.png) center center no-repeat;background-size:100%;}
 .cinematography i:before{background: url(../img/cinematography-gray.png) center center no-repeat;background-size:100%;}
 .art_costume i:before{background: url(../img/art_costume-gray.png) center center no-repeat;background-size:100%;width: 8rem;}
@@ -602,6 +603,7 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
 .postproduction.active i:before, .sound_music.active i:before, .production.active i:before, .choreography.active i:before
 {content: ""; width:6rem;background:url(../img/coreteam.png) center center no-repeat;position: absolute;top: 50%;left: 50%;
   transform: translate(-50%, -50%);height: 100%;background-size:100%;}
+  .coreteam.active i:before{width:7rem;}
 .direction.active i:before{background: url(../img/direction.png) center center no-repeat;background-size:100%;}
 .cinematography.active i:before{background:url(../img/cinematography.png) center center no-repeat;background-size:100%;}
 .art_costume.active i:before{background:url(../img/art_costume.png) center center no-repeat;background-size:100%;width: 8rem; }
@@ -611,6 +613,9 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
 .choreography.active i:before{background:url(../img/choreography.png) center center no-repeat;background-size:100%;}
 
 .blur-bg{width:100%;height:100%;background:url(../img/bg.jpg) no-repeat; background-size:cover;position:absolute;top:0;left:0;backdrop-filter: blur(5px);filter: blur(5px);}
+.txt-img, .txt-icon {position: absolute;top: 0;left: 0;}
+
+
 
 @media only screen and (max-width:1201px){
   .popupslider_cast{margin-left: 20px; margin-right: 20px;}
