@@ -191,6 +191,16 @@ $(document).ready(function () {
 				$('a[href="#' + $(anchors[i]).attr('id') + '"]').removeClass('active');
 			}
 		}
+
+
+		//image animation js
+		var imgoffset = $('.image_wrapper').offset().top;
+		if($(window).scrollTop() > (imgoffset - 150)){
+			$('.image_wrapper').addClass('imageanimation');
+		}
+		//image animation js end
+
+
 	});
 	//open video in popup
 	if ($('.video-modal').length) {
@@ -287,7 +297,6 @@ $(document).ready(function () {
 		}
 	})
 	// crow tab jsend
-
 });
 
 $(window).resize(function () {
