@@ -581,6 +581,22 @@ select.classic:focus{background-image: linear-gradient(45deg, white 50%, transpa
 .txt-img, .txt-icon {position: absolute;top: 0;left: 0;}
 .mt-150{margin-top:-200px;}
 
+.imageanimation .txt-icon {
+  /* -webkit-animation: imagefadein 3s;
+  -moz-animation: imagefadein 3s;
+  -o-animation: imagefadein 3s; */
+  animation: imagefadein 3s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+@keyframes imagefadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @media only screen and (max-width:1201px){
   .popupslider_cast{margin-left: 20px; margin-right: 20px;}
