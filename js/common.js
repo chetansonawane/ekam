@@ -225,12 +225,24 @@ $(document).ready(function () {
 	//testimonials slider 
 	$('.popupslider_cast--slider').slick({
 		centerMode: true,
-		centerPadding: '160px',
+		centerPadding: '380px',
 		slidesToShow: 1,
 		dots: false,
 		arrows: false,
 		asNavFor: '.slider_dots',
 		responsive: [
+			{
+				breakpoint: 1700,
+				settings: {
+					centerPadding: '250px',
+				}
+			},
+			{
+				breakpoint: 1400,
+				settings: {
+					centerPadding: '160px',
+				}
+			},
 			{
 				breakpoint: 1201,
 				settings: {
