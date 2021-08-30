@@ -195,7 +195,7 @@ $(document).ready(function () {
 
 		//image animation js
 		var imgoffset = $('.image_wrapper').offset().top;
-		if($(window).scrollTop() > (imgoffset - 150)){
+		if ($(window).scrollTop() > (imgoffset - 150)) {
 			$('.image_wrapper').addClass('imageanimation');
 		}
 		//image animation js end
@@ -295,15 +295,15 @@ $(document).ready(function () {
 	});
 
 	// crow tab js
-	$('.crew_icon li').on('click',function(){
+	$('.crew_icon li').on('click', function () {
 		var targetclass = $(this).attr('rel');
 		$('.crew_icon li').removeClass('active');
 		$('.crew_img_box .crew_img').hide();
 		$(this).addClass('active');
-		$('.crew_img_box .'+targetclass).show();
-		
+		$('.crew_img_box .' + targetclass).show();
+
 		if ($(window).width() <= 767) {
-			$("html, body").animate({ 
+			$("html, body").animate({
 				scrollTop: $('.crew_img_box').offset().top
 			});
 		}
@@ -369,3 +369,8 @@ $(document).ready(function () {
 		fixedContentPos: false
 	});
 });
+
+
+$(".chosen-select").chosen({
+	no_results_text: "Oops, nothing found!"
+})
