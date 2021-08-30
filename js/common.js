@@ -52,6 +52,7 @@ $(document).ready(function () {
 		jQuery("body").addClass('o-hidden');
 		jQuery('.overlay-bg').fadeIn(1000);
 		jQuery('.loopmein-popup2').fadeIn(1000);
+		jQuery('.loopmein-popup2').addClass('showpopup');
 	});
 
 	jQuery('.close').on('click', function (e) {
@@ -61,6 +62,7 @@ $(document).ready(function () {
 		jQuery("body").removeClass('o-hidden');
 		jQuery('.overlay-bg').fadeOut(1000);
 		jQuery('.loopmein-popup2').fadeOut(500);
+		jQuery('.loopmein-popup2').removeClass('showpopup');
 	});
 
 	jQuery('.seeall-popup').on('click', function () {
